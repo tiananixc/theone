@@ -1,0 +1,374 @@
+
+
+
+
+
+
+
+
+
+唐坊酒_搜索_互动百科
+
+
+document.domain="baike.com";
+
+
+
+
+		
+			
+				
+					
+							百科图片IN词微百科科普汇名人百科有奖任务百科商城
+							
+								
+								
+							
+						
+ 				正在加载中...
+				
+			
+		
+
+
+
+
+function initCreateDoc(){
+	var isLogin = getHdCookie("hduser") != null;
+	var loginUrl = "http://passport.baike.com/login.do?site_ource=zz_page";
+	if($("#create_doc_btn").length > 0){
+		$("#create_doc_btn").click(function(){
+			var self = this;
+			var redirectUrl = $(self).attr("action")+"&prd=so_chuangjian";
+			if(!isLogin){
+				redirectUrl = loginUrl+"&service="+encodeURIComponent(redirectUrl);
+			}
+			document.location = redirectUrl;
+			return false;
+		});
+	}
+}
+$(document).ready(function() {
+	loadLoginInfo();
+	initCreateDoc();
+	 $.HdHead({
+		 productType:"so_doc",
+		 openac:true,
+		 topBtn:".bk-search .search-button",
+         title_filter:function(q){
+				return q.replace(/\+/g,'%2B');
+			},
+		  hotwordActionUrl:"",
+	      ipt_nav_a:".bk-search .nv a[class!='logo']:first",
+	      Hots_config:{
+	    	  search_button:".bk-search .search-button"
+	      }
+      });
+});
+
+
+
+
+
+
+
+
+	
+		
+			
+			囧，互动百科尚未收录 唐坊酒 词条。
+			欢迎您来创建，与广大网友分享关于 唐坊酒 词条的信息
+					
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+			
+			    
+			    酒都_百科词条
+			    
+			    中国酒都位于四川省宜宾市，中国以酒闻名的地方不少，但以有“酒都”之誉的地方屈指可数。酒都不仅仅现在是以酒名扬四海，重要的得有酒文化的底蕴和悠久的历史。可...
+			    
+				
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+			
+			    
+			    唐都_百科词条
+			    
+			    唐都，即唐朝都城长安。盛唐时期成为当时规模最大、最繁华的国际大都市，是东西方文化交流的汇集地。
+			    
+				历史背景&nbsp;&nbsp;&nbsp;布局&nbsp;&nbsp;&nbsp;风水特征&nbsp;&nbsp;&nbsp;西市东市&nbsp;&nbsp;&nbsp;里坊
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+			
+			    
+			    盛世驰坊_百科词条
+			    
+			    盛世驰坊是一款高中低度，高中低档全面定位的白酒品牌，满足了不同地区、不同口味、不同档次消费者的需求。2012年，在泸州老窖迎来百年岁月年轮上新的一圈的时...
+			    
+				
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+			
+			    
+			    泸州大唐烧坊酒业有限公司_百科词条
+			    
+			    酒的发展前景起点达到国际标准，包装具有中国唐文化特点。“大唐烧坊...是指起源于盛唐时代。“坊”是唐人们对酒的生产场所的称谓，“烧”是指“烧酒...坊酒业有限公司是四川泸州施可富大曲酒厂的专业销售公司。为纪念在公元...
+			    
+				司 荣 誉
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+			
+			    
+			    唐长安城_百科词条
+			    
+			    唐长安城，即隋大兴城，是隋唐两朝的首都、京师，也是当时世界上规模最大的城市和中国古代最大的都城，唐长安城是按照汉民族传统规划思想和建筑风格建设起来的城市...
+			    
+				选址初创&nbsp;&nbsp;&nbsp;布局&nbsp;&nbsp;&nbsp;风水特征&nbsp;&nbsp;&nbsp;西市东市&nbsp;&nbsp;&nbsp;里坊
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+			
+			    
+			    五粮液酒_百科词条
+			    
+			    五粮液集团有限公司位于“万里长江第一城”——中国西南腹地的四川省宜宾市北面的岷江之滨。享有“名酒之乡”美称的四川省宜宾市，是宜宾五粮酒的故乡。
+			    
+				五粮液集团简介&nbsp;&nbsp;&nbsp;五粮液历史&nbsp;&nbsp;&nbsp;系列产品&nbsp;&nbsp;&nbsp;酿造工艺&nbsp;&nbsp;&nbsp;主导产品
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+			
+			    
+			    湖北枝江酒业股份有限公司_百科词条
+			    
+			    湖北枝江酒业股份有限公司的历史可以追溯到1817年，由嘉庆年间的谦泰吉槽坊演变而来，是一家酒业的老品牌。
+			    
+				
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+			
+			    
+			    桑落酒_百科词条
+			    
+			    桑落酒是我国传统的历史名酒，产于永济市。永济古称“河东”“阿中”“蒲州”。据文献记载：“北魏，河东郡多流离，谓之徙民。民有姓刘名白堕者，宿擅工酿，采挹河...
+			    
+				
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+			
+			    
+			    培德酒_百科词条
+			    
+			    。中唐，成都府年年进贡剑南生春酒。806年，李肇《唐国史补》“酒则有剑南之烧...开办浸水阁烧坊烤酒。好水加好粮酿造之酒，纯正柔和，余味悠长，名声日振...之手，改称魏家醩坊。其子魏悦召继承伍市干酒酿造技术，所酿美酒写进...
+			    
+				培酒史源&nbsp;&nbsp;&nbsp;培德酒览&nbsp;&nbsp;&nbsp;培德酒现状&nbsp;&nbsp;&nbsp;培酒史源&nbsp;&nbsp;&nbsp;培德酒览
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+			
+			    
+			    济宁金波酒_百科词条
+			    
+			    金波酒始产于一七五五年，是山东济宁玉堂酱园的传统优质产品之一。因其酒液色泽金黄、波光粼粼而得名。《镜花缘》第九十六回写：一位客官走进一家酒馆，要饮天下名...
+			    
+				
+		 		
+		  		baike.com/2016-09-07
+		 	
+		
+	
+
+
+
+
+
+
+
+
+		
+	
+	
+	
+	
+	
+	
+	
+	
+			
+	
+		 
+	
+	 
+	 	 
+	
+	
+	
+
+
+
+
+
+		
+			
+			
+		
+	
+		
+		
+			
+				
+				
+				
+				
+				帮助
+			
+		
+
+
+
+ 
+
+
+
+ 
+//读cookei判断用户是否登录
+var hdCookieName="hduser";
+function getHdCookie (name){
+	var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+	if(arr != null) return unescape(arr[2]); return null;
+}
+$(function() {
+	$('.img_results img').mouseenter(function() {
+	    var posit = $(this).position();
+		$("#ala_img_hoverview").css("top",posit.top-10);
+		$("#ala_img_hoverview").css("left",posit.left-10);
+		$("#ala_img_hoverview").css("height","110px");
+		$("#ala_img_hoverview").css("position","absolute");
+		$("#ala_img_hoverview").attr("href",$(this).parent().attr("href"));
+		$("#ala_img_bigimg").attr("src",$(this).attr("src"));
+		$("#ala_img_bigimg").css("height","110px");
+		$("#ala_img_bigimg").show();
+		$("#ala_img_hoverview").show();
+		
+	});
+	$('#ala_img_hoverview').mouseleave(function() {
+		$("#ala_img_bigimg").hide();
+		$("#ala_img_hoverview").hide();
+	});
+	
+	var queryString = $("input[name=q]").eq(0).val();
+	if($.trim(queryString)==""){
+		return;
+	}
+	var pageOptions = { 
+	  'pubId' : 'partner-hudong-1',
+	  'query' : queryString,
+	  'hl' : 'zh_CN',
+	  'oe' : 'utf8', 
+	  'ie' : 'utf8',  
+	  'adPage' : 1
+	};
+	var adblock1 = { 
+	  'container' : 'wide_ad_unit',
+	  'number' : '3',
+	  'width' : 'auto',
+	  'lines' : '3',
+	  'fontFamily' : 'arial',
+	  'fontSizeTitle' : '16px',
+	  'fontSizeDescription' : '12px',
+	  'fontSizeDomainLink' : '12px',
+	  'colorTitleLink' : '#0077CC',
+	  'colorText' : '#333333',
+	  'colorDomainLink' : '#888888',
+	  'linkTarget' : '_blank'
+	};
+	var adblock2 = { 
+	  'container' : 'wide_ad_unit2',
+	  'number' : '3',
+	  'width' : 'auto',
+	  'lines' : '3',
+	  'fontFamily' : 'arial',
+	  'fontSizeTitle' : '16px',
+	  'fontSizeDescription' : '12px',
+	  'fontSizeDomainLink' : '12px',
+	  'colorTitleLink' : '#0077CC',
+	  'colorText' : '#333333',
+	  'colorDomainLink' : '#888888',
+	  'linkTarget' : '_blank'
+	};
+	
+	$.ajaxSetup({cache: true});
+	$.getScript("http://www.huimg.cn/ads/js/hd.ad1.20151126.js",function(){
+			var hudongAdDocOptions = {
+			bizType : "searchdoc",
+			bizId : $("#ad_search_q").val(),
+			domain : "so.baike.com",
+			adBlockPrefix : "hd_ad_search_doc_",
+			adIframePrefix : "hd_ad_search_doc_iframe_",
+			adLocations : [84,85],
+			adConfigs : [{
+						type : "iframe",
+						width : 350,
+						height : 250,
+						style : ""
+					}, {
+						type : "iframe",
+						width : 350,
+						height : 250,
+						style : "margin-top:10px;"
+					}]
+			};
+			if (typeof(hudongAdsTemplate) != "undefined" && typeof(hudongAdsTemplate.loadAds) == "function") {
+				hudongAdsTemplate.loadAds(hudongAdDocOptions);
+			}
+		});
+		$.ajaxSetup({cache: false});
+	
+});
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+全自动分析特定日期的网站数据及日志 ，包含logsawk.sh所有功能：allawk.sh $date
+
+全自动分析特定日期的日志 ，接收日期如0712，只需将文档目录中的当日日志解压即可：logsawk.sh $date
+
+查询当天网站数据：webawk.sh
+
+全自动分析特定日期的移动网站日志 ，接收日期如0712：mlogsawk.sh $date
+
+自动分析日志，包括目录：awk.sh
+分析目录中日志的各个蜘蛛的抓取情况：222/awk.sh
+分析日志中单个蜘蛛的抓取情况：spawk.sh $date $spname (date格式如0711，spname=Baiduspider,sogou,360Spider,google,YisouSpider,Macintosh)
+日志中各个蜘蛛的反馈码情况 allspstatu.sh $date
+
+指定日期，指定ip 分离出单独文件,需在脚本内修改日期、IP tedingip.sh
+
+酒网日志 9log.sh $date
+
+allspidernum.sh 各个蜘蛛的抓取情况
+
+nomvlogawk.sh $date  不移动日志 ( no move)，直接分析特定日期日志
+listpagescrapy.sh $date 各个蜘蛛对各个栏目的抓取情况
+
+ipnlu.sh 批量nslookup查询ip是否是百度蜘蛛，IP放在ip.txt文件中
+isok.sh $filename  批量查询接状态反馈码
+ipvar_1.sh  批量查询一个文件夹中所有日志中的真实蜘蛛情况（包括三种常见蜘蛛：123.125.71.*、220.181.108.*、180.76.15.*）
+
+mla.sh 食品或酒网特定日期目录抓取情况 格式：sh mla.sh $date $site (spzs or 19888)
+
+sh 9www.sh 1021  19888 www主站的抓取情况
+
+wwwawk.sh $y $f $b 特定日期区间的整站和主站www的二级目录抓取情况 $y 月份 $f 前面的日期 $b 后面的日期
+
+bd/log sh ss.sh $site 检测log文件夹里所有.log文件名的蜘蛛总数量，和真实蜘蛛数量、假蜘蛛数量、WWW抓取数量, site值为 19888 或spzs

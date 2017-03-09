@@ -1,0 +1,43 @@
+﻿白酒,no field,no field
+啤酒,no field,no field
+红酒,no field,no field
+鸡尾酒,no field,no field
+保健酒,no field,no field
+果酒,no field,no field
+米酒,no field,no field
+进口酒,no field,no field
+黄酒,no field,no field
+白酒供应,no field,no field
+啤酒供应,no field,no field
+红酒供应,no field,no field
+鸡尾酒供应,www.19888.tv,5
+果酒供应,no field,no field
+米酒供应,www.19888.tv,7
+进口酒供应,no field,no field
+黄酒供应,no field,no field
+白酒招商,no field,no field
+啤酒招商,no field,no field
+红酒招商,no field,no field
+鸡尾酒招商,www.19888.tv,3
+果酒招商,www.19888.tv,6
+米酒招商,www.19888.tv,2
+进口酒招商,www.19888.tv,3
+黄酒招商,no field,no field
+白酒代理,no field,no field
+啤酒代理,no field,no field
+红酒代理,no field,no field
+鸡尾酒代理,no field,no field
+保健酒代理,no field,no field
+果酒代理,no field,no field
+米酒代理,www.19888.tv,5
+进口酒代理,no field,no field
+黄酒代理,no field,no field
+白酒求购,no field,no field
+啤酒求购,no field,no field
+红酒求购,no field,no field
+鸡尾酒求购,no field,no field
+保健酒求购,no field,no field
+果酒求购,no field,no field
+米酒求购,no field,no field
+进口酒求购,no field,no field
+黄酒求购,no field,no field

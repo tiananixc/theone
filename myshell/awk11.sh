@@ -1,0 +1,2 @@
+#!/bin/bash
+dates=$(date -d last-day +%m%d);filename='access'$dates'.log';bdname='bd'$dates'.log';pwd;mv $filename bd;cd bd;pwd;grep Baiduspider $filename>$bdname;echo 'Logfile Split Success!';bdsn=`cat $bdname|wc -l`;echo '百度抓取数：'$bdns;echo '\n-----------------------------\n';

@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head"><title>
+	
+    物通CRM管理系统-登录
+
+</title><link href="Css/Bing.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="Js/jquery-ui-1.8.1.custom.min.js"></script>
+    <link type="text/css" href="Css/Chart.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function addBookmark(title, url) {
+            if (window.sidebar) {
+                window.sidebar.addPanel(title, url, "");
+            } else if (document.all) {
+                window.external.AddFavorite(url, title);
+            } else if (window.opera && window.print) {
+                return true;
+            }
+        }
+        function setHomepage() {
+            if (document.all) {
+                document.body.style.behavior = 'url(#default#homepage)';
+                document.body.setHomePage('http://localhost');
+            }
+            else if (window.sidebar) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    }
+                    catch (e) {
+                        alert("该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true");
+                    }
+                }
+                var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                prefs.setCharPref('browser.startup.homepage', 'http://localhost');
+            }
+        }    
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="title">
+            欢迎使用
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="javascript:setHomepage()">设为首页</a></li>
+                <li>|</li>
+                <li><a href="javascript:addBookmark('物通CRM管理系统','http://crm.chinawutong.com/');">添加到收藏夹</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="page">
+        <div id="main">
+            <div id="login_box">
+                <div id="login_bg"></div>
+                <form name="aspnetForm" method="post" action="login.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg0OTA4MDM5Ng9kFgJmD2QWAgIBD2QWAgIBD2QWAgIDDw9kFgIeBVZhbHVlZWQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFHWN0bDAwJE1haW5Db250ZW50JGNieFJlbWVtYmVy+PT8xnnTfEawqVDiAEYGXDvJB04=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBgKRyKDLDQLwkrODBALil++SAgK5ysLjCwKo36WDDQKRnIq9DwMkbemJvGjpIJD0LGAzxJ6h/DWg" />
+                    <div id="login_form">
+                        
+    <style type="text/css">
+        .loginbut {
+            background: url(Images/login.png) no-repeat 0 0;
+            border: 0px;
+            width: 66px;
+            height: 27px;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript" src="artDialog.js"></script>
+    <script type="text/javascript" src="Js/Timelyremind.js"></script>
+    <table style="margin-left: 60px;">
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <h1>物通CRM管理系统</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>用户名：
+                </td>
+                <td>
+                    <input name="ctl00$MainContent$tbxUserName" type="text" value="tianshuaibing" id="ctl00_MainContent_tbxUserName" />
+                </td>
+            </tr>
+            <tr>
+                <td>密&nbsp;&nbsp;&nbsp;码：
+                </td>
+                <td>
+                    <input name="ctl00$MainContent$tbxPassWord" type="password" id="ctl00_MainContent_tbxPassWord" Value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>验证码：
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td style="padding: 0px;">
+                                <input name="ctl00$MainContent$txtCode" type="text" value="gztt" id="ctl00_MainContent_txtCode" />
+                            </td>
+                            <td style="padding-left: 10px;">
+                                <img style="width: 70px; height: 30px;" alt="看不清换一张" src="/Ashx/System/VaidCode.ashx"
+                                    onclick="this.src='/Ashx/System/VaidCode.ashx?flag='+Math.random()" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="display: none">
+
+                <td>记住我？
+                </td>
+                <td>
+                    <input id="ctl00_MainContent_cbxRemember" type="checkbox" name="ctl00$MainContent$cbxRemember" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="ctl00$MainContent$btnLogin" value="" id="ctl00_MainContent_btnLogin" class="loginbut" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+                    </div>
+                </form>
+                <div id="bing_logo"></div>
+                <div id="bg_controller">
+                    <a id="prev" href="javascript:void(0);" class="disabled">◄</a> <a id="next" href="javascript:void(0);" class="disabled">►</a>
+                    <div id="copyright1">&copy;Bing</div>
+                </div>
+            </div>
+            <div id="perday_links"></div>
+        </div>
+        <div id="footer">
+            &copy;2016 北京物通时空网络科技开发有限公司
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        $(function () {
+            $("#bg_controller #prev").click(function () {
+                if (currentBing && currentBing.prev)
+                    getBing(bingIndex - 1, $(this));
+            });
+            $("#bg_controller #next").click(function () {
+                if (currentBing && currentBing.next)
+                    getBing(bingIndex + 1, $(this));
+            });
+            getBing();
+        });
+        var bingIndex = 0;
+        var bingimages = {};
+        var currentBing = {};
+        function loadAnimate(imageurl) {
+            $("#login_bg").stop();
+            $("#login_bg").css("opacity", 0);
+            $("#login_bg").css("backgroundImage", "url(" + imageurl + ")");
+            $("#login_bg").fadeTo(1000, 1, function () { $("#login_bg").css("opacity", ""); });
+        }
+        function getBing(b_index, sender) {
+            $.getJSON("BingHandler.ashx" + (b_index != null ? "?index=" + b_index : ""), function (data) {
+                currentBing = data;
+                var bi = data.bi;
+                var imageurl = bi.Image;
+
+                if (bingimages[data.index])
+                    loadAnimate(imageurl);
+                else {
+                    var loadingtext = "正在加载...";
+                    var txt = "";
+                    if ($(sender).text() != loadingtext)
+                        txt = $(sender).text();
+                    $(sender).text(loadingtext);
+                    $("<img/>").attr("src", imageurl).load(function () {
+                        loadAnimate(imageurl);
+                        bingimages[data.index] = { url: imageurl };
+                        $(sender).text(txt);
+                    });
+                }
+                $("#perday_links").empty().append("<ul />");
+                for (var i = 0; i < bi.Descriptions.length; i++) {
+                    var $item = $("<li />").html("<p>" + bi.Descriptions[i].Description + "</p>");
+                    if (i == bi.Descriptions.length - 1)
+                        $item.addClass("last");
+                    //$item.append($("<a />").attr("href", bi.Descriptions[i].Url).append($("<span/>").html("» 点击查看")));
+                    $("#perday_links ul").append($item);
+                }
+                if (bi.Descriptions.length > 0)
+                    $("#perday_links").slideDown();
+                else
+                    $("#perday_links").slideUp();
+
+                if (data.next)
+                    $("#bg_controller #next").removeClass("disabled");
+                else
+                    $("#bg_controller #next").addClass("disabled");
+                if (data.prev)
+                    $("#bg_controller #prev").removeClass("disabled");
+                else
+                    $("#bg_controller #prev").addClass("disabled");
+                bingIndex = data.index;
+            });
+        }
+    </script>
+</body>
+</html>
